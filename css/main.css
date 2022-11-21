@@ -52,7 +52,6 @@ body {
   padding-bottom: 29px;
   overflow: hidden;
 }
-
 .fix-list {
   position: relative;
   display: block;
@@ -92,6 +91,10 @@ body {
   width: 50px !important;
   height: 50px !important;
   overflow: hidden;
+}
+/* 뒷편 아이콘 없애기 */
+.good-recent::after {
+  content: none !important;
 }
 .good-recent img {
   position: absolute;
