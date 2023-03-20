@@ -3,6 +3,17 @@
 // 모든 요소가 갖추어지면 실행하도록 한다.
 // 아래코드는 딱 한번만 작성한다.
 window.onload = function () {
+  //crwn 코딩 알림창
+  const cwnAlert = document.querySelector(".cwnAlert");
+  const cwnBt = document.querySelector(".crwn-close-bt");
+  const wrapAll = document.querySelector(".wrap");
+  const fixMenu = document.querySelector(".fix-menu");
+  cwnBt.addEventListener("click", function () {
+    cwnAlert.style.display = "none";
+    wrapAll.style.opacity = "1";
+    fixMenu.style.opacity = "1";
+  });
+
   // 콤마기능
   function priceToString(price) {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
